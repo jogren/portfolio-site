@@ -1,24 +1,55 @@
 <template>
-  <div id="app">
+  <main id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">About</router-link> |
+      <router-link to="/work">Work</router-link> |
+      <router-link to="/resume">Resume</router-link> |
+      <router-link to="/contact">Contact</router-link>
     </div>
-    <router-view/>
-  </div>
+    <Header />
+    <router-view />
+  </main>
 </template>
 
+<script>
+import Header from './components/Header';
+
+export default {
+  name: 'App',
+  components: {
+    Header
+  }
+}
+</script>
+
 <style>
+* {
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 100;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  width: 70%;
+  height: 70%;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
 }
 
 #nav {
-  padding: 30px;
+  padding: 30px 0px;
+  width: 50%;
+  margin: auto 0;
 }
 
 #nav a {
