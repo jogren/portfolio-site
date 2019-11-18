@@ -18,15 +18,17 @@ export default {
   display: flex;
   align-items: center;
   width: 50%;
-}
+  position: absolute;
+  top: 350px;
+  left: 0px;
+} 
 
 h1 {
-  padding: 10px;
+  text-align: center;
 }
 
 .header_bold {
   font-weight: 700;
-  padding: 10px;
 }
 
 hr {
