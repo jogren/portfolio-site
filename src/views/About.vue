@@ -1,8 +1,10 @@
 <template>
   <div class="content-container about-container">
     <img src="../../public/JacobOgren.jpg"/>
-    <p>Software engineer and product marketing professional with work experience on cross-functional teams in the tech industry.</p>
-    <p>As a self-starter and learner with a history of building intuitive and accessible applications, I aspire to join a team that values hard work, collaboration, and developer growth.</p>
+    <ol type="i">
+      <li>Software engineer and product marketing professional with work experience on cross-functional teams in the tech industry.</li><br />
+      <li>As a self-starter and learner with a history of building intuitive and accessible applications, I aspire to join a team that values hard work, collaboration, and developer growth.</li>
+    </ol>
   </div>
 </template>
 
@@ -14,18 +16,21 @@ export default {
 
 <style>
 .content-container {
-  padding: 10px 50px;
+  padding: 50px;
   margin-top: 10%;
   width: 50%;
   animation: scale-up 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-.content-container img {
-  height: 100px;
-}
-
 .about-container {
   background-color: #0ce9ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-container img {
+  height: 150px;
 }
 
 @keyframes scale-up {
