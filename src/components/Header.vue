@@ -25,6 +25,9 @@ export default {
 
 h1 {
   text-align: center;
+  color: #fff;
+  font-size: 44px;
+  padding-right: 15%; 
 }
 
 .header_bold {
