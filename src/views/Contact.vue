@@ -21,6 +21,10 @@ export default {
   background-color: #ffd60c;
 }
 
+h1 {
+  font-weight: 500;
+}
+
 .contact-container img {
   height: 15px;
 }
