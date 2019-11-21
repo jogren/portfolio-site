@@ -4,10 +4,10 @@
       <img src="../../public/JacobOgren.jpg"/>
     </div>
     <ul style="list-style-type:square;">
-      <li>Full-Stack Software Engineer and UI/UX Enthusiast</li><br />
-      <li>Self-starter and lover of learning</li><br />
-      <li>Hands-on experience building intuitive and accessible applications</li><br />
-      <li>Teacher and Mentor</li><br />
+      <li>Full-Stack Software Engineer and UI/UX Enthusiast</li>
+      <li>Self-starter and lover of learning</li>
+      <li>Hands-on experience building intuitive and accessible applications</li>
+      <li>Teacher and Mentor</li>
       <li>Aspiring to join a team that values hard work, collaboration, and developer growth</li>
     </ul>
   </div>
@@ -40,6 +40,10 @@ export default {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+}
+
+.about-container ul li {
+  margin-bottom: 12px;
 }
 
 @keyframes scale-up {

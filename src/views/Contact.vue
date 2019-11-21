@@ -25,7 +25,7 @@ export default {
   text-decoration: none;
   display: block;
   color: #3e3b39;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 h1 {
