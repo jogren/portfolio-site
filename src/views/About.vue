@@ -1,9 +1,14 @@
 <template>
   <div class="content-container about-container">
-    <img src="../../public/JacobOgren.jpg"/>
+    <div class="img-cropper">
+      <img src="../../public/JacobOgren.jpg"/>
+    </div>
     <ol type="i">
-      <li>Software engineer and product marketing professional with work experience on cross-functional teams in the tech industry.</li><br />
-      <li>As a self-starter and learner with a history of building intuitive and accessible applications, I aspire to join a team that values hard work, collaboration, and developer growth.</li>
+      <li>Full-Stack Software Engineer and UI/UX Enthusiast</li><br />
+      <li>Self-starter and lover of learning</li><br />
+      <li>Hands-on experience building intuitive and accessible applications</li><br />
+      <li>Teacher and Mentor</li><br />
+      <li>Aspiring to join a team that values hard work, collaboration, and developer growth</li>
     </ol>
   </div>
 </template>
@@ -30,7 +35,11 @@ export default {
 }
 
 .about-container img {
-  height: 150px;
+  object-fit: cover;
+  object-position: 100% 25%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
 }
 
 @keyframes scale-up {
