@@ -19,7 +19,7 @@ export default {
   align-items: center;
   width: 50%;
   position: absolute;
-  top: 350px;
+  top: 63%;
   left: 0px;
 } 
 
