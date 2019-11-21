@@ -38,4 +38,12 @@ hr {
   width: 100%;
   height: 0;
 }
+
+@media only screen and (max-width: 880px) {
+  .Header_container {
+    position: static;
+    width: 100%;
+    margin-top: 10%;
+  }
+}
 </style>
