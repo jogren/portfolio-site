@@ -3,13 +3,13 @@
     <div class="img-cropper">
       <img src="../../public/JacobOgren.jpg"/>
     </div>
-    <ol type="i">
+    <ul style="list-style-type:square;">
       <li>Full-Stack Software Engineer and UI/UX Enthusiast</li><br />
       <li>Self-starter and lover of learning</li><br />
       <li>Hands-on experience building intuitive and accessible applications</li><br />
       <li>Teacher and Mentor</li><br />
       <li>Aspiring to join a team that values hard work, collaboration, and developer growth</li>
-    </ol>
+    </ul>
   </div>
 </template>
 
