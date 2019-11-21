@@ -57,4 +57,11 @@ export default {
    }
 }
 
+@media only screen and (max-width: 880px) {
+  .content-container {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+
 </style>
