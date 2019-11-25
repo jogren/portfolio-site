@@ -64,4 +64,14 @@ export default {
   }
 }
 
+@media only screen and (max-width: 570px) {
+  .about-container {
+    padding: 20px 10px;
+  }
+
+  .about-container ul li {
+    font-size: 12px;
+  }
+}
+
 </style>
