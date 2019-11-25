@@ -61,6 +61,8 @@ export default {
   .content-container {
     width: 100%;
     margin-top: 0px;
+    position: absolute;
+    top: 200px;
   }
 }
 
