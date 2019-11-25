@@ -36,4 +36,14 @@ h1 {
   height: 15px;
 }
 
+@media only screen and (max-width: 570px) {
+  h1 {
+    margin-top: 0px;
+  }
+
+  .contact-container {
+    padding: 30px 14px;
+  }
+}
+
 </style>
