@@ -75,6 +75,7 @@ body {
     width: 100%;
     border-bottom: none;
     padding: 0px 0px 30px 0px;
+    text-align: center;
   }
 }
 </style>
