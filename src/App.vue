@@ -69,12 +69,20 @@ body {
 @media only screen and (max-width: 880px) {
   #app {
     flex-direction: column;
+    border-bottom: none;
   }
 
   #nav {
     width: 100%;
     border-bottom: none;
     padding: 0px 0px 30px 0px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  #nav {
+    text-align: center;
   }
 }
 </style>

@@ -65,6 +65,10 @@ export default {
 }
 
 @media only screen and (max-width: 570px) {
+  .content-container {
+    min-height: fit-content;
+  }
+  
   .about-container {
     padding: 20px 10px;
   }
