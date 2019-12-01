@@ -5,7 +5,7 @@
     </div>
     <ul style="list-style-type:square;">
       <li>Full-Stack Software Engineer and UI/UX Enthusiast</li>
-      <li>Self-starter and lover of learning</li>
+      <li>Self-starter, problem-solver, and lover of learning</li>
       <li>Hands-on experience building intuitive and accessible applications</li>
       <li>Teacher and Mentor</li>
       <li>Aspiring to join a team that values hard work, collaboration, and developer growth</li>
