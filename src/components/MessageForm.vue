@@ -23,7 +23,7 @@
           class="message-body"
           v-model="message"/>
       </label>
-      <button @click="toggleSubmitFormStatus">Submit</button>
+      <button :disabled="!name || !email || !company || !message" @click="toggleSubmitFormStatus">Submit</button>
     </form>
     <transition v-else name="fade">
       <p>Thanks so much for connecting! I will be in touch soon.</p>
