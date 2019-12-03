@@ -4,16 +4,24 @@
       <p @click="toggleSendMessage" class='back-btn'>◀ back</p>
       <label> Name:
         <input 
-          type="text"/>
+          type="text"
+          v-model="name"/>
       </label>
       <label> Email:
-        <input type="text"/>
+        <input 
+          type="text"
+          v-model="email"/>
       </label>
       <label> Company:
-        <input type="text"/>
+        <input 
+          type="text"
+          v-model="company"/>
       </label>
       <label> Message:
-        <textarea type="text" class="message-body"/>
+        <textarea 
+          type="text" 
+          class="message-body"
+          v-model="message"/>
       </label>
       <button @click="toggleSubmitFormStatus">Submit</button>
     </form>
@@ -38,7 +46,11 @@ export default {
   },
   data() {
     return {
-      submitFormStatus: false
+      submitFormStatus: false,
+      name: "",
+      email: "",
+      company: "",
+      message: ""
     }
   }
 }
@@ -83,12 +95,14 @@ export default {
   input {
     height: 30px;
     width: 70%;
+    font-size: 12px;
   }
 
   .message-body {
     height: 150px !important;
     width: 70% !important;
     resize: none !important;
+    font-size: 12px;
   }
 
   .fade-enter-active, .fade-leave-active {
