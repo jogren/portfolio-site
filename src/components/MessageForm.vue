@@ -2,12 +2,12 @@
   <div>
     <form v-if="!this.submitFormStatus">
       <p @click="toggleSendMessage" class='back-btn'>◀ back</p>
-      <label> Name:
+      <label> Name:*
         <input 
           type="text"
           v-model="name"/>
       </label>
-      <label> Email:
+      <label> Email:*
         <input 
           type="text"
           v-model="email"/>
@@ -17,13 +17,13 @@
           type="text"
           v-model="company"/>
       </label>
-      <label> Message:
+      <label> Message:*
         <textarea 
           type="text" 
           class="message-body"
           v-model="message"/>
       </label>
-      <button :disabled="!name || !email || !company || !message" @click="toggleSubmitFormStatus">Submit</button>
+      <button :disabled="!name || !email || !message" @click="toggleSubmitFormStatus">Submit</button>
     </form>
     <transition v-else name="fade">
       <p>Thanks so much for connecting! I will be in touch soon.</p>
@@ -90,6 +90,10 @@ export default {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+  }
+
+  label span {
+    color: red;
   }
 
   input {
