@@ -3,9 +3,13 @@
     <form v-if="!this.submitFormStatus">
       <p @click="toggleSendMessage" class='back-btn'>◀ back</p>
       <label> Name:
-        <input type="text"/>
+        <input 
+          type="text"/>
       </label>
       <label> Email:
+        <input type="text"/>
+      </label>
+      <label> Company:
         <input type="text"/>
       </label>
       <label> Message:
