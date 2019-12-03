@@ -38,6 +38,7 @@ export default {
 .contact-container {
   background-color: #ffd60c;
   position: relative;
+  padding: 50px;
 }
 
 h1 {

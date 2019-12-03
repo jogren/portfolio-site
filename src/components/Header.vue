@@ -41,9 +41,7 @@ hr {
 
 @media only screen and (max-width: 880px) {
   .Header_container {
-    /* position: initial; */
     width: 100%;
-    /* margin-top: 10%; */
     top: 0px;
   }
 }
