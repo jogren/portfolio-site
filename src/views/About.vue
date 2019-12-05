@@ -1,29 +1,14 @@
 <template>
   <div class="content-container about-container">
     <header class="img-header">
-      <div>
-        <h3>Software Engineer</h3>
-      </div>
       <img src="../../public/JacobOgren.jpg"/>
-      <div>
-        <h3>Teacher & Mentor</h3>
-      </div>
     </header>
-    <div class="list-container">  
-      <article>
-        <ul style="list-style-type:square;">
-          <li>UI/UX Enthusiast</li>
-          <li>Creative problem-solver and lover of learning</li>
-          <li>Hands-on experience building intuitive and accessible applications</li>
-        </ul>
-      </article>
-      <article>
-        <ul style="list-style-type:square;">
-          <li>Focused on teaching front-end development to new engineers</li>
-          <li>Passionate about blending professional and technical skills</li>
-        </ul>
-      </article>
-    </div>
+    <ol>
+      <li>Full-Stack Software Engineer & UI/UX Enthusiast passionate about bringing innovative ideas to life through clean, maintainable, and reusable code</li>
+      <li>Experienced teacher and mentor focused on coaching front-end development to new engineers and blending professional skills with technical</li>
+      <li>Customer-centric professional who believes that no problem is too large  and that making the web more intentional and accessible is key in unlocking its potential</li>
+      <li>More than anything, I’m curious and aspire to join a team that is comfortable asking questions that start with "Why?"</li>
+    </ol>
   </div>
 </template>
 
@@ -62,24 +47,34 @@ export default {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-  }
-
-  .img-header div {
-    width: 100px;
+    margin-bottom: 5%;
   }
 
   .list-container {
     display: flex;
   }
 
-  h3 {
-    text-align: center;
-    font-weight: 500;
-    font-size: 22px;
+  ol {
+    list-style: none;
+    counter-reset: list-counter;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
   }
-
-  .about-container ul li {
-    margin-bottom: 12px;
+  ol li {
+    counter-increment: list-counter;
+    display: flex;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  ol li::before {
+    content: "0" counter(list-counter);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-right: 0.5rem;
+    font-family: 'Abril Fatface', serif;
+    line-height: 1;
   }
 
   @keyframes scale-up {
