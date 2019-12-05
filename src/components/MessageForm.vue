@@ -1,7 +1,7 @@
 <template>
   <div>
     <form v-if="!this.submitFormStatus">
-      <p @click="toggleSendMessage" class='back-btn'>◀ back</p>
+      <p @click="toggleSendMessage" @keyup.enter="toggleSendMessage" class="back-btn" tabindex="0">◀ back</p>
       <label> Name:*
         <input 
           type="text"

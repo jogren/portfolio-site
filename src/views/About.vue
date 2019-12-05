@@ -44,8 +44,7 @@ export default {
 
   .img-header {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     width: 100%;
     margin-bottom: 5%;
   }
