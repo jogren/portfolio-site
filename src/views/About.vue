@@ -20,7 +20,7 @@ export default {
 
 <style>
   .content-container {
-    margin-top: 10%;
+    margin-top: 7%;
     width: 50%;
     min-height: 400px;
     animation: scale-up 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
