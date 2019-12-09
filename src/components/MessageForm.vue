@@ -23,7 +23,10 @@
           class="message-body"
           v-model="message"/>
       </label>
-      <button :disabled="!name || !email || !message" @click="toggleSubmitFormStatus">Submit</button>
+      <button :disabled="!name || !email || !message" @click="postMessage">Submit</button>
+      <div class="message-error">
+        <p v-if="this.error">Please submit a message under 250 characters. Thank you!</p>
+      </div>
     </form>
     <transition v-else name="fade">
       <p>Thanks so much for connecting! I will be in touch soon.</p>
@@ -32,6 +35,8 @@
 </template>
 
 <script>
+import { postNewMessage } from '../apiCalls/apiCalls';
+
 export default {
   name: 'MessageForm',
   props: ["sendMessage", "toggleSendMessage"],
@@ -42,6 +47,18 @@ export default {
         this.toggleSendMessage();
         this.submitFormStatus = false; 
       }, 2000);
+    },
+    async postMessage() {
+      try {
+        await postNewMessage(this.name, this.email, this.company, this.message);
+        this.submitFormStatus = true;
+        setTimeout(() => {
+          this.toggleSendMessage();
+          this.submitFormStatus = false; 
+        }, 2000);
+      } catch(error){
+        this.error = error.message;
+      }
     }
   },
   data() {
@@ -50,7 +67,8 @@ export default {
       name: "",
       email: "",
       company: "",
-      message: ""
+      message: "",
+      error: ""
     }
   }
 }
@@ -107,6 +125,14 @@ export default {
     width: 70% !important;
     resize: none !important;
     font-size: 12px;
+  }
+
+  .message-error {
+    height: 20px;
+  }
+
+  .message-error p {
+    text-align: center;
   }
 
   .fade-enter-active, .fade-leave-active {
