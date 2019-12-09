@@ -6,7 +6,7 @@
     <ol>
       <li>Full-Stack Software Engineer & UI/UX Enthusiast passionate about bringing innovative ideas to life through clean, maintainable, and reusable code</li>
       <li>Experienced teacher and mentor focused on coaching front-end development to new engineers and blending professional skills with technical</li>
-      <li>Customer-centric believer that no problem is too large  and that making the web more intentional and accessible is key in unlocking its potential</li>
+      <li>Customer-centric believer that no problem is too large and that making the web more intentional and accessible is key in unlocking its potential</li>
       <li>More than anything, I’m curious and aspire to join a team that is comfortable asking questions that start with "Why?"</li>
     </ol>
   </div>
