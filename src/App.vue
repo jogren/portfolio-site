@@ -4,7 +4,7 @@
     <div id="nav">
       <router-link to="/">About</router-link> |
       <a href="https://alumni.turing.io/alumni/jacob-ogren" target="_blank">Work</a> |
-      <a href="https://alumni.turing.io/sites/default/files/resumes/Jacob_Ogren_Resume_0.pdf" target="_blank">Resume</a> |
+      <a href="https://alumni.turing.io/sites/default/files/resumes/Jacob_Ogren_Resume.pdf" target="_blank">Resume</a> |
       <router-link to="/contact">Contact</router-link>
     </div>
     <router-view />
